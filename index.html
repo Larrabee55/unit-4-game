@@ -11,29 +11,22 @@
 
 </head>
 
-<body>
+<body style="background: center url(../unit-4-game/assets/images/background.png)">
   <div class="container">
     <div class="row">
-      <div class="col-md-8">
-        <h1>Star Wars RPG</h1>
-
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-8">
-        <h2 id="announcer"></h2>
-
-      </div>
+      <h1 class="text-white">Star Wars RPG</h1>
     </div>
     <!-- choose your character -->
     <!-- displays characters until your character is chosen and then then moves your character to the you character row and 
       the rest to the character available to attack row -->
     <div class="row">
+      <h2 class="text-white">Characters</h2>
+    </div>
+    <div class="row">
       <div class="col-md-8">
-        <h2>Characters</h2>
-        <div class="card-group">
+        <div class="card-group characters">
           <!-- Darth vader card -->
-          <div class="card darthVader" id="darthVader" value="darthVader" style="max-width: 12rem;">
+          <div class="card darthVader character" id="darthVader" value="80" style="max-width: 12rem;">
             <div class="card-header" id="darthVaderName">
               <p class="text-center">Darth Vader</p>
             </div>
@@ -41,43 +34,31 @@
               <img class="card-img" src="../unit-4-game/assets/images/darthVader.png" alt="Darth Vader">
             </div>
             <div class="card-footer hp">
-              <p class="hp">HP:</p>
+              <p class="hp">HP: 100</p>
             </div>
           </div>
           <!-- Kenobi card -->
-          <div class="card kenobi" id="kenobi" value="kenobi" style="max-width: 12rem;">
+          <div class="card kenobi character" id="kenobi" value="100" style="max-width: 12rem;">
             <div class="card-header">
               <p class="text-center">Kenobi</p>
             </div>
             <div class="card-body">
               <img class="card-img" src="../unit-4-game/assets/images/kenobi.png" alt="Kenobi">
             </div>
-            <div class="card-footer hp">
-              <p class="hp">HP:</p>
+            <div class="card-footer">
+              <p class="hp">HP: 100</p>
             </div>
           </div>
           <!-- Darth Maul card -->
-          <div class="card darthMaul" id="darthMaul" value="darthMaul" style="max-width: 12rem;">
+          <div class="card darthMaul character" id="darthMaul" value="100" style="max-width: 12rem;">
             <div class="card-header">
               <p class="text-center">Darth Maul</p>
             </div>
             <div class="card-body">
               <img class="card-img" src="../unit-4-game/assets/images/darthMaul.png" alt="Darth Maul">
             </div>
-            <div class="card-footer hp">
-              <p class="hp">HP:</p>
-            </div>
-          </div>
-          <!-- Yoda Card -->
-          <div class="card yoda" id="yoda" value="yoda" style="max-width: 12rem;">
-            <div class="card-header">
-              <p class="text-center">Yoda</p>
-            </div>
-            <div class="card-body">
-              <img class="card-img" src="../unit-4-game/assets/images/yoda.png" alt="Yoda">
-            </div>
-            <div class="card-footer hp">
-              <p class="hp">HP:</p>
+            <div class="card-footer">
+              <p class="hp">HP: 100</p>
             </div>
           </div>
         </div>
@@ -85,24 +66,30 @@
     </div>
     <!-- your character -->
     <div class="row">
-      <div class="col-md-8">
-        <h2>Your Character</h2>
+      <h2 class="text-white">Your Character</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8 yourCharacter">
 
       </div>
     </div>
     <!-- characters available to attack -->
     <!-- once a character is chosen to be opponent it takes them out off this row and puts them into opponent row -->
     <div class="row">
-      <div class="col-md-8">
-        <h2>Characters Available to Attack</h2>
+      <h2 class="text-white">Characters Available to Attack</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8 charactersToAttack">
 
       </div>
     </div>
     <!-- fight section -->
     <div class="row">
+      <h2 class="text-white">Fight Section</h2>
+    </div>
+    <div class="row">
       <div class="col-md-8">
-        <h2>Fight Section</h2>
-        <button type="button" class="btn btn-dark">Attack</button>
+        <button type="button" class="btn btn-dark attack">Attack</button>
       </div>
     </div>
     <!-- oppenent -->
@@ -110,12 +97,15 @@
       another opponent. if opponent wins then it tells the User they lose. if all opponents are defeated then it prompts the user
      they have won -->
     <div class="row">
-      <div class="col-md-8">
-        <h2>Opponent</h2>
+      <h2 class="text-white">Opponent</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-8 opponent">
 
       </div>
     </div>
   </div>
+  <script src="../unit-4-game/assets/javascript/game2.js"></script>
 </body>
 
 </html>
